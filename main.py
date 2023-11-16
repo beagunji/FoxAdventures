@@ -367,16 +367,14 @@ def instrucoes():
         texto_tela1 = texto1.get_rect(center=(480, 140))
         texto2 = get_font(15).render("Para jogar siga as instruções:", True, "Black")
         texto_tela2 = texto2.get_rect(center=(480, 240))
-        texto3 = get_font(15).render("Para se mover utilize as setas do teclado", True, "Black")
+        texto3 = get_font(15).render("Para pular utilize a barra de espaço", True, "Black")
         texto_tela3 = texto3.get_rect(center=(480, 290))
-        texto4 = get_font(15).render("(cima, baixo, esquerda e direita)", True, "Black")
-        texto_tela4 = texto4.get_rect(center=(480, 320))
         texto5 = get_font(15).render("Para tirar a música do menu aperte DESLIGAR SOM", True, "Black")
-        texto_tela5 = texto5.get_rect(center=(480, 380))
+        texto_tela5 = texto5.get_rect(center=(480, 330))
         texto6 = get_font(15).render("Para voltar a música aperte em qualquer local da tela", True, "Black")
-        texto_tela6 = texto6.get_rect(center=(480, 410))
+        texto_tela6 = texto6.get_rect(center=(480, 380))
         texto7 = get_font(15).render("BOM JOGO!!!", True, "Black")
-        texto_tela7 = texto7.get_rect(center=(480, 480))
+        texto_tela7 = texto7.get_rect(center=(480, 430))
         
         screen.blit(texto1, texto_tela1)
         screen.blit(texto2, texto_tela2)
@@ -385,6 +383,7 @@ def instrucoes():
         screen.blit(texto5, texto_tela5)
         screen.blit(texto6, texto_tela6)
         screen.blit(texto6, texto_tela6)
+        screen.blit(texto7, texto_tela7)
 
         ranking_voltar = Button(image=None, pos=(480, 510), 
                             text_input="VOLTAR", font=get_font(15), base_color="Black", hovering_color="White")
